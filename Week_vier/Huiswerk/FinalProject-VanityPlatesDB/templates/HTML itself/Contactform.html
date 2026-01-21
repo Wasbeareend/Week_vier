@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" href="../../static/Style_(css)/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #ccf2ff;
+        }
+
+        .form-box {
+            background-color: #e6ffe6;
+            border: 3px solid #33cc33;
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .rainbow-text {
+            font-weight: bold;
+            text-align: center;
+            font-size: 28px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .btn-custom {
+            background-color: #009933;
+            color: white;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #007a29;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-box">
+        <h1 class="rainbow-text">Contact Form</h1>
+
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control"></textarea>
+            </div>
+
+            <button type="button" class="btn btn-custom w-100" onclick="toonMelding()">Send</button>
+        </form>
+    </div>
+
+    <audio id="plingSound" src="Pling.mp3" preload="auto"></audio>
+
+    <script>
+        function toonMelding() {
+            document.getElementById("plingSound").play();
+            alert("You pressed the button! :D");
+        }
+    </script>
+
+</body>
+</html>

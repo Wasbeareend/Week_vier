@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="text-center mb-4">Number plate validator</h1>
+
+    <!-- Form for entering number plate -->
+    <form method="POST" action="/">
+        <div class="form-group">
+            <label for="plate">Enter your number plate:</label>
+            <input type="text" class="form-control" id="plate" name="plate" placeholder="Enter plate">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="mt-5">
+        <h2>Previously entered number plates:</h2>
+        <ul>
+            {% for plate in plates %}
+                <li>{{ plate[1] }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,126 @@
+body {
+  font-family: "Bauhaus 93";
+  margin: 20px;
+  background: cornsilk;
+  color: #0033cc;
+}
+
+h1, h2 {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+}
+
+.flex-gallery {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 14px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.box:hover {
+  transform: rotate(-2deg) scale(1.03);
+}
+
+.box-margin {
+  background: #ffd6a5;
+  margin: 18px;
+}
+
+.box-padding {
+  background: #caffbf;
+  padding: 18px;
+}
+
+.box-width {
+  width: 260px;
+  background: #9bf6ff;
+}
+
+.box-height {
+  height: 220px;
+  background: #a0c4ff;
+}
+
+.box-bg {
+  background: #ffadad;
+  color: #111;
+}
+
+.box-border {
+  background: #fdffb6;
+  border: 6px dashed #333;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 25px;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.row {
+  background: #6c757d;
+  color: white;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-weight: bold;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.row-color {
+  color: yellow;
+  background: #222;
+}
+
+.row-static {
+  position: static;
+  background: #495057;
+}
+
+.row-relative {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background: #0077b6;
+}
+
+.row-fixed {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 220px;
+  background: black;
+  z-index: 5;
+}
+
+.row-sticky {
+  position: sticky;
+  top: 0;
+  background: darkgreen;
+}
+
+.row-extra {
+  background: purple;
+  border: 3px solid white;
+}

@@ -1,0 +1,77 @@
+body {
+    background-image: url("../Pictures/achtergrond.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: arial;
+    color: midnightblue;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+h3, h4, h5 {
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    color: midnightblue;
+}
+
+a {
+    color: midnightblue;
+    font-size: 12px;
+    font-style: italic;
+}
+section {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.Who_am_I,
+.Skills_and_expertise {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.Who_am_I_tekst,
+.Skills_tekst {
+    flex: 1;
+}
+
+.Who_am_I_afbeelding {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.Who_am_I_afbeelding img {
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.Skills_expertise_afbeelding img {
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.Contact_tekst {
+    font-weight: bold;
+}
+
